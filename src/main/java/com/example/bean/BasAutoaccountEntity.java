@@ -2,6 +2,7 @@ package com.example.bean;
 
 import javax.persistence.*;
 
+
 /**
  * Created by yy on 2016/10/10
  * .
