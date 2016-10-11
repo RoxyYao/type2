@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Time;
 
 /**
- * Created by yy on 2016/10/10
+ * Created by yy on 2016/10/1010
  * .
  */
 @Entity

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.kift.demo.bean.cis.CisCustomerinfo" table="CIS_CUSTOMERINFO" schema="TYPE23">
+        <id name="id">
+            <column name="ID" sql-type="number(*)" precision="2147483646"/>
+        </id>
+        <property name="brcno">
+            <column name="BRCNO" sql-type="char(10)" length="10"/>
+        </property>
+        <property name="custno">
+            <column name="CUSTNO" sql-type="char(21)" length="21"/>
+        </property>
+        <property name="custname">
+            <column name="CUSTNAME" sql-type="varchar2(70)" length="70"/>
+        </property>
+        <property name="idtype">
+            <column name="IDTYPE" sql-type="char(2)" length="2"/>
+        </property>
+        <property name="idno">
+            <column name="IDNO" sql-type="char(18)" length="18"/>
+        </property>
+        <property name="lostdate">
+            <column name="LOSTDATE" sql-type="date" not-null="true"/>
+        </property>
+        <property name="custtype">
+            <column name="CUSTTYPE" sql-type="char(1)" length="1"/>
+        </property>
+        <property name="custmngno">
+            <column name="CUSTMNGNO" sql-type="char(10)" length="10" not-null="true"/>
+        </property>
+        <property name="linkman">
+            <column name="LINKMAN" sql-type="varchar2(50)" length="50" not-null="true"/>
+        </property>
+        <property name="phone">
+            <column name="PHONE" sql-type="char(15)" length="15"/>
+        </property>
+        <property name="email">
+            <column name="EMAIL" sql-type="varchar2(20)" length="20" not-null="true"/>
+        </property>
+        <property name="nationcode">
+            <column name="NATIONCODE" sql-type="char(2)" length="2" not-null="true"/>
+        </property>
+        <property name="begindate">
+            <column name="BEGINDATE" sql-type="date"/>
+        </property>
+        <property name="moddate">
+            <column name="MODDATE" sql-type="date"/>
+        </property>
+        <property name="enddate">
+            <column name="ENDDATE" sql-type="date" not-null="true"/>
+        </property>
+        <property name="channel">
+            <column name="CHANNEL" sql-type="char(1)" length="1"/>
+        </property>
+        <property name="ctrlcode">
+            <column name="CTRLCODE" sql-type="char(2)" length="2"/>
+        </property>
+        <property name="status">
+            <column name="STATUS" sql-type="char(2)" length="2"/>
+        </property>
+        <property name="address">
+            <column name="ADDRESS" sql-type="varchar2(70)" length="70"/>
+        </property>
+    </class>
+</hibernate-mapping>
