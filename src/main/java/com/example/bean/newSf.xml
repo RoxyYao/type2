@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:oracle:thin:@//113.31.18.98:6003/cerp</property>
+    <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <mapping class="com.example.bean.BasAutoaccountEntity"/>
+    <mapping class="com.example.bean.CisCustomerinfoEntity"/>
+    <mapping class="com.example.bean.BasBranchEntity"/>
+    <mapping class="com.example.bean.BasBrclinkEntity"/>
+    <mapping class="com.example.bean.BasFeebookEntity"/>
+    <mapping class="com.example.bean.BasFeeparamEntity"/>
+    <mapping class="com.example.bean.BasFeerateEntity"/>
+    <mapping class="com.example.bean.BasFeeruleinfoEntity"/>
+    <mapping class="com.example.bean.BasMaketcodeEntity"/>
+    <mapping class="com.example.bean.BasPowerEntity"/>
+    <mapping class="com.example.bean.BasPrdEntity"/>
+    <mapping class="com.example.bean.BasRateEntity"/>
+    <mapping class="com.example.bean.BasRunEntity"/>
+    <mapping class="com.example.bean.BasSortEntity"/>
+    <mapping class="com.example.bean.BasSubdictEntity"/>
+    <mapping class="com.example.bean.BasUserEntity"/>
+    <mapping class="com.example.bean.CisCustacctcompEntity"/>
+    <mapping class="com.example.bean.CisCustlinkEntity"/>
+    <mapping class="com.example.bean.CisIdtypecompEntity"/>
+    <mapping class="com.example.bean.CisPersoninfoEntity"/>
+    <mapping class="com.example.bean.DemoBeanEntity"/>
+    <mapping class="com.example.bean.DemoinfoEntity"/>
+    <mapping class="com.example.bean.GlsCycbalEntity"/>
+    <mapping class="com.example.bean.GlsDaybalEntity"/>
+    <mapping class="com.example.bean.GlsDaybalhisEntity"/>
+    <mapping class="com.example.bean.IasCancelacctregEntity"/>
+    <mapping class="com.example.bean.IasLedgerEntity"/>
+    <mapping class="com.example.bean.IasLedgeritemEntity"/>
+    <mapping class="com.example.bean.IasSuspacctregEntity"/>
+    <mapping class="com.example.bean.KasAcct2HistranslogEntity"/>
+    <mapping class="com.example.bean.KasAcct2TranslogEntity"/>
+    <mapping class="com.example.bean.KasAcct3HistranslogEntity"/>
+    <mapping class="com.example.bean.KasAcct3TranslogEntity"/>
+    <mapping class="com.example.bean.KasIahistranslogEntity"/>
+    <mapping class="com.example.bean.KasIatranslogEntity"/>
+    <mapping class="com.example.bean.LasAcccount2StcEntity"/>
+    <mapping class="com.example.bean.LasAccount2DynEntity"/>
+    <mapping class="com.example.bean.LasAccount2ItemEntity"/>
+    <mapping class="com.example.bean.LasAccount3DynEntity"/>
+    <mapping class="com.example.bean.LasAccount3ItemEntity"/>
+    <mapping class="com.example.bean.LasAccount3StcEntity"/>
+    <mapping class="com.example.bean.LasIntitemEntity"/>
+    <mapping class="com.example.bean.LasIntoutputEntity"/>
+    <mapping class="com.example.bean.LasIntrulesEntity"/>
+    <mapping class="com.example.bean.LasLostregEntity"/>
+    <mapping class="com.example.bean.LasOpencloseaccregEntity"/>
+    <mapping class="com.example.bean.SmsDataEntity"/>
+    <mapping class="com.example.bean.SmsInfoEntity"/>
+    <mapping resource="com/example/bean/BasAutoaccountEntity.hbm.xml"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
