@@ -8,7 +8,7 @@ import java.sql.Time;
  * .
  */
 @Entity
-@Table(name = "BAS_RUN", schema = "TYPE23", catalog = "")
+@Table(name = "BAS_RUN", schema = "TYPE23")
 public class BasRunEntity {
     private long id;
     private String brcno;
